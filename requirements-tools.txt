@@ -1,0 +1,6 @@
+# Only needed to REBUILD the art layers / sounds (tools/build_*.py).
+# The generated assets are committed, so normal users don't need these.
+-r requirements.txt
+pillow>=11
+scipy>=1.14
+opencv-python-headless>=4.10

@@ -1,0 +1,23 @@
+# Vexa runtime (target: Windows 10, Python 3.14)
+PySide6==6.11.*            # Qt 6.11: QMediaPlayer + QAudioBufferOutput + QSoundEffect
+numpy>=2.1
+psutil>=6
+mutagen>=1.47              # local tags + embedded album art (MP3/FLAC/M4A/OGG)
+
+# --- Windows-only extras (skipped automatically elsewhere) -------------------
+# WASAPI loopback capture of system audio (YouTube Music / Spotify visuals).
+PyAudioWPatch>=0.2.12.9; sys_platform == "win32"
+# Per-app L/R balance through the Windows audio session (IChannelAudioVolume).
+pycaw>=20240316; sys_platform == "win32"
+comtypes>=1.4; sys_platform == "win32"
+
+# Optional fallback loopback backend if PyAudioWPatch can't be installed:
+# soundcard>=0.4.6; sys_platform == "win32"
+# SMTC now-playing + transport for Spotify / YouTube Music (pywinrt 3.x has cp314 wheels;
+# the old 'winsdk' package is dead and has no 3.14 build).
+winrt-runtime>=3.2; sys_platform == "win32"
+winrt-Windows.Foundation>=3.2; sys_platform == "win32"
+winrt-Windows.Foundation.Collections>=3.2; sys_platform == "win32"
+winrt-Windows.Media>=3.2; sys_platform == "win32"
+winrt-Windows.Media.Control>=3.2; sys_platform == "win32"
+winrt-Windows.Storage.Streams>=3.2; sys_platform == "win32"
