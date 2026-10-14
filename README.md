@@ -41,4 +41,4 @@ The app ends up in `dist\Vexa\`. Zip that folder to share it. You can delete `_i
 
 ## License
 
-The **code** is MIT licensed, (c) 2026 Rory. The **art and sound assets** in `assets/` are free for personal use only and may not be redistributed or resold. See [LICENSE](LICENSE) for details. Not affiliated with any company. 
+The **code** is MIT licensed, (c) 2026 Rory. The **art and sound assets** in `assets/` are free for personal use only and may not be redistributed or resold. See [LICENSE](LICENSE) (code) and [ASSETS-LICENSE.txt](ASSETS-LICENSE.txt) (assets). Not affiliated with any company. 
